@@ -1,3 +1,6 @@
+
+import javax.swing.table.DefaultTableModel;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -78,7 +81,7 @@ public class JavaPOS extends javax.swing.JFrame {
         jButton17 = new javax.swing.JButton();
         jButton18 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
+        jBtnRainboCake = new javax.swing.JButton();
         jButton21 = new javax.swing.JButton();
         jButton22 = new javax.swing.JButton();
         jButton23 = new javax.swing.JButton();
@@ -189,13 +192,14 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 110, 100));
 
-        jButton20.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        jBtnRainboCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnRainboCake.setText(" Rainbo Cake");
+        jBtnRainboCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                jBtnRainboCakeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton20, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 110, 100));
+        jPanel1.add(jBtnRainboCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 110, 100));
 
         jButton21.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
         jButton21.addActionListener(new java.awt.event.ActionListener() {
@@ -504,7 +508,7 @@ public class JavaPOS extends javax.swing.JFrame {
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 1380, 180));
 
-        jtxtBarcode.setFont(new java.awt.Font("barcode font", 1, 36)); // NOI18N
+        jtxtBarcode.setFont(new java.awt.Font("barcode font", 1, 48)); // NOI18N
         jtxtBarcode.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtBarcodeActionPerformed(evt);
@@ -656,9 +660,13 @@ public class JavaPOS extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton19ActionPerformed
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    private void jBtnRainboCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRainboCakeActionPerformed
+        double priceOfTheItem = 3.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Rainbow Cake","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnRainboCakeActionPerformed
 
     private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
         // TODO add your handling code here:
@@ -772,11 +780,11 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jBtn9;
     private javax.swing.JButton jBtnC;
     private javax.swing.JButton jBtnPoint;
+    private javax.swing.JButton jBtnRainboCake;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
     private javax.swing.JButton jButton23;
