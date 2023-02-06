@@ -48,7 +48,25 @@ public class JavaPOS extends javax.swing.JFrame {
         jtxtBarcode.setText(barCode);
         
         
-    }    
+    }
+    //==========================================Function changer===================================
+    
+    public void change(){
+        double sum = 0;
+        double tax = 3.9;
+        double cash = Double.parseDouble(jtxtDisplay.getText());
+        
+        for ( int i = 0; i< jTable1.getRowCount(); i++){
+            sum = sum + Double.parseDouble(jTable1.getValueAt(i, 2).toString());
+        }
+        
+        double cTax = (sum * 3.9)/100;
+        double cChange = (cash - (sum+cTax));
+        
+        String changeGiven = String.format("INR %.2f", cChange);
+        jtxtChange.setText(changeGiven);
+    }
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
