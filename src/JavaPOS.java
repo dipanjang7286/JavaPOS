@@ -45,18 +45,18 @@ public class JavaPOS extends javax.swing.JFrame {
         jButton29 = new javax.swing.JButton();
         jButton30 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
-        jButton9 = new javax.swing.JButton();
-        jButton10 = new javax.swing.JButton();
-        jButton11 = new javax.swing.JButton();
-        jButton12 = new javax.swing.JButton();
-        jButton13 = new javax.swing.JButton();
-        jButton14 = new javax.swing.JButton();
-        jButton15 = new javax.swing.JButton();
+        jBtn9 = new javax.swing.JButton();
+        jBtn7 = new javax.swing.JButton();
+        jBtn8 = new javax.swing.JButton();
+        jBtn4 = new javax.swing.JButton();
+        jBtn5 = new javax.swing.JButton();
+        jBtn6 = new javax.swing.JButton();
+        jBtn1 = new javax.swing.JButton();
+        jBtn2 = new javax.swing.JButton();
+        jBtn3 = new javax.swing.JButton();
+        jBtnC = new javax.swing.JButton();
+        jBtnPoint = new javax.swing.JButton();
+        jBtn0 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jPanel4 = new javax.swing.JPanel();
@@ -64,11 +64,23 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+        jtxtDisplay = new javax.swing.JTextField();
+        jtxtChange = new javax.swing.JTextField();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jtxtTotal = new javax.swing.JTextField();
+        jtxtSubTotal = new javax.swing.JTextField();
+        jtxtTax = new javax.swing.JTextField();
         jPanel3 = new javax.swing.JPanel();
+        jbtnReset = new javax.swing.JButton();
+        jbtnRemove = new javax.swing.JButton();
+        jbtnPay = new javax.swing.JButton();
+        jbtnExit = new javax.swing.JButton();
+        jbtnPrint = new javax.swing.JButton();
+        jtxtBarcode = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -225,113 +237,114 @@ public class JavaPOS extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton1.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton1.setText("9");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jBtn9.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn9.setText("9");
+        jBtn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jBtn9ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 90, 80));
+        jPanel2.add(jBtn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 10, 90, 80));
 
-        jButton2.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton2.setText("7");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        jBtn7.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn7.setText("7");
+        jBtn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                jBtn7ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 90, 80));
+        jPanel2.add(jBtn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 90, 80));
 
-        jButton3.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton3.setText("8");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jBtn8.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn8.setText("8");
+        jBtn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jBtn8ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 90, 80));
+        jPanel2.add(jBtn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 10, 90, 80));
 
-        jButton7.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton7.setText("7");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        jBtn4.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn4.setText("4");
+        jBtn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                jBtn4ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 90, 80));
+        jPanel2.add(jBtn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 90, 80));
 
-        jButton8.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton8.setText("8");
-        jButton8.addActionListener(new java.awt.event.ActionListener() {
+        jBtn5.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn5.setText("5");
+        jBtn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton8ActionPerformed(evt);
+                jBtn5ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 90, 80));
+        jPanel2.add(jBtn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, 90, 80));
 
-        jButton9.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton9.setText("9");
-        jButton9.addActionListener(new java.awt.event.ActionListener() {
+        jBtn6.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn6.setText("6");
+        jBtn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton9ActionPerformed(evt);
+                jBtn6ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton9, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 90, 80));
+        jPanel2.add(jBtn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 100, 90, 80));
 
-        jButton10.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton10.setText("7");
-        jButton10.addActionListener(new java.awt.event.ActionListener() {
+        jBtn1.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn1.setText("1");
+        jBtn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton10ActionPerformed(evt);
+                jBtn1ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 90, 80));
+        jPanel2.add(jBtn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 190, 90, 80));
 
-        jButton11.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton11.setText("8");
-        jButton11.addActionListener(new java.awt.event.ActionListener() {
+        jBtn2.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn2.setText("2");
+        jBtn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton11ActionPerformed(evt);
+                jBtn2ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton11, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 90, 80));
+        jPanel2.add(jBtn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 190, 90, 80));
 
-        jButton12.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton12.setText("9");
-        jButton12.addActionListener(new java.awt.event.ActionListener() {
+        jBtn3.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn3.setText("3");
+        jBtn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton12ActionPerformed(evt);
+                jBtn3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton12, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 90, 80));
+        jPanel2.add(jBtn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 190, 90, 80));
 
-        jButton13.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton13.setText("9");
-        jButton13.addActionListener(new java.awt.event.ActionListener() {
+        jBtnC.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtnC.setText("C");
+        jBtnC.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton13ActionPerformed(evt);
+                jBtnCActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton13, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 90, 80));
+        jPanel2.add(jBtnC, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 280, 90, 80));
 
-        jButton14.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton14.setText("8");
-        jButton14.addActionListener(new java.awt.event.ActionListener() {
+        jBtnPoint.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtnPoint.setText(".");
+        jBtnPoint.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton14ActionPerformed(evt);
+                jBtnPointActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 90, 80));
+        jPanel2.add(jBtnPoint, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 280, 90, 80));
 
-        jButton15.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton15.setText("7");
-        jButton15.addActionListener(new java.awt.event.ActionListener() {
+        jBtn0.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jBtn0.setText("0");
+        jBtn0.setToolTipText("");
+        jBtn0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton15ActionPerformed(evt);
+                jBtn0ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 90, 80));
+        jPanel2.add(jBtn0, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 90, 80));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 20, 310, 410));
 
@@ -354,16 +367,28 @@ public class JavaPOS extends javax.swing.JFrame {
         jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jLabel4.setText("Sub Total");
-        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 160, 40));
+        jLabel4.setText("Payment Method");
+        jPanel5.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 280, 40));
 
         jLabel5.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jLabel5.setText("Tax");
+        jLabel5.setText("Cash");
         jPanel5.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 160, 40));
 
         jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
-        jLabel6.setText("Total");
+        jLabel6.setText("Change");
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 160, 40));
+        jPanel5.add(jtxtDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 160, 40));
+
+        jtxtChange.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtChangeActionPerformed(evt);
+            }
+        });
+        jPanel5.add(jtxtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 160, 40));
+
+        jComboBox1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Mater Card" }));
+        jPanel5.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 160, 40));
 
         jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 460, 160));
 
@@ -381,66 +406,118 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel3.setText("Tax");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 160, 40));
+        jPanel6.add(jtxtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 240, 40));
+        jPanel6.add(jtxtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 13, 240, 40));
+        jPanel6.add(jtxtTax, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 240, 40));
 
         jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 450, 160));
 
         jPanel3.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jbtnReset.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jbtnReset.setText("Reset");
+        jPanel3.add(jbtnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 200, 40));
+
+        jbtnRemove.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jbtnRemove.setText("Remove");
+        jbtnRemove.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnRemoveActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jbtnRemove, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 60, 200, 40));
+
+        jbtnPay.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jbtnPay.setText("Pay");
+        jbtnPay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnPayActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jbtnPay, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 200, 40));
+
+        jbtnExit.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jbtnExit.setText("EXIT");
+        jbtnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnExitActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jbtnExit, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 410, 40));
+
+        jbtnPrint.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jbtnPrint.setText("Print");
+        jbtnPrint.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnPrintActionPerformed(evt);
+            }
+        });
+        jPanel3.add(jbtnPrint, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 200, 40));
+
         jPanel4.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 10, 430, 160));
 
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 440, 1380, 180));
+
+        jtxtBarcode.setFont(new java.awt.Font("barcode font", 1, 36)); // NOI18N
+        jtxtBarcode.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtBarcodeActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jtxtBarcode, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 380, 320, 50));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBtn9ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_jBtn7ActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void jBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    }//GEN-LAST:event_jBtn8ActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void jBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_jBtn4ActionPerformed
 
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+    private void jBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton8ActionPerformed
+    }//GEN-LAST:event_jBtn5ActionPerformed
 
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+    private void jBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
+    }//GEN-LAST:event_jBtn6ActionPerformed
 
-    private void jButton10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton10ActionPerformed
+    private void jBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton10ActionPerformed
+    }//GEN-LAST:event_jBtn1ActionPerformed
 
-    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+    private void jBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton11ActionPerformed
+    }//GEN-LAST:event_jBtn2ActionPerformed
 
-    private void jButton12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton12ActionPerformed
+    private void jBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton12ActionPerformed
+    }//GEN-LAST:event_jBtn3ActionPerformed
 
-    private void jButton13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton13ActionPerformed
+    private void jBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton13ActionPerformed
+    }//GEN-LAST:event_jBtnCActionPerformed
 
-    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+    private void jBtnPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPointActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton14ActionPerformed
+    }//GEN-LAST:event_jBtnPointActionPerformed
 
-    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+    private void jBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn0ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton15ActionPerformed
+    }//GEN-LAST:event_jBtn0ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         // TODO add your handling code here:
@@ -514,6 +591,30 @@ public class JavaPOS extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton30ActionPerformed
 
+    private void jtxtBarcodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtBarcodeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtBarcodeActionPerformed
+
+    private void jtxtChangeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtChangeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtChangeActionPerformed
+
+    private void jbtnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRemoveActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnRemoveActionPerformed
+
+    private void jbtnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnPayActionPerformed
+
+    private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnExitActionPerformed
+
+    private void jbtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPrintActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jbtnPrintActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -550,18 +651,22 @@ public class JavaPOS extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton11;
-    private javax.swing.JButton jButton12;
-    private javax.swing.JButton jButton13;
-    private javax.swing.JButton jButton14;
-    private javax.swing.JButton jButton15;
+    private javax.swing.JButton jBtn0;
+    private javax.swing.JButton jBtn1;
+    private javax.swing.JButton jBtn2;
+    private javax.swing.JButton jBtn3;
+    private javax.swing.JButton jBtn4;
+    private javax.swing.JButton jBtn5;
+    private javax.swing.JButton jBtn6;
+    private javax.swing.JButton jBtn7;
+    private javax.swing.JButton jBtn8;
+    private javax.swing.JButton jBtn9;
+    private javax.swing.JButton jBtnC;
+    private javax.swing.JButton jBtnPoint;
     private javax.swing.JButton jButton16;
     private javax.swing.JButton jButton17;
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
@@ -572,14 +677,11 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jButton27;
     private javax.swing.JButton jButton28;
     private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton30;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
-    private javax.swing.JButton jButton9;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -594,5 +696,16 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JButton jbtnExit;
+    private javax.swing.JButton jbtnPay;
+    private javax.swing.JButton jbtnPrint;
+    private javax.swing.JButton jbtnRemove;
+    private javax.swing.JButton jbtnReset;
+    private javax.swing.JTextField jtxtBarcode;
+    private javax.swing.JTextField jtxtChange;
+    private javax.swing.JTextField jtxtDisplay;
+    private javax.swing.JTextField jtxtSubTotal;
+    private javax.swing.JTextField jtxtTax;
+    private javax.swing.JTextField jtxtTotal;
     // End of variables declaration//GEN-END:variables
 }
