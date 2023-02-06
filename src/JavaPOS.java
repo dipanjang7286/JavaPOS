@@ -472,51 +472,115 @@ public class JavaPOS extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jBtn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn9ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn9.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn9.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn9ActionPerformed
 
     private void jBtn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn7ActionPerformed
-        // TODO add your handling code here:
+        
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn7.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn7.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn7ActionPerformed
 
     private void jBtn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn8ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn8.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn8.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn8ActionPerformed
 
     private void jBtn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn4ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn4.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn4.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn4ActionPerformed
 
     private void jBtn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn5ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn5.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn5.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn5ActionPerformed
 
     private void jBtn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn6ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn6.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn6.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn6ActionPerformed
 
     private void jBtn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn1ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn1.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn1.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn1ActionPerformed
 
     private void jBtn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn2ActionPerformed
-        // TODO add your handling code here:
+       String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn2.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn2.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn2ActionPerformed
 
     private void jBtn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn3ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn3.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn3.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn3ActionPerformed
 
     private void jBtnCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCActionPerformed
-        // TODO add your handling code here:
+        jtxtDisplay.setText("");
+        jtxtChange.setText("");
     }//GEN-LAST:event_jBtnCActionPerformed
 
     private void jBtnPointActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnPointActionPerformed
-        // TODO add your handling code here:
+        if(! jtxtDisplay.getText().contains(".")){
+            jtxtDisplay.setText(jtxtDisplay.getText() + jBtnPoint.getText());
+        }
     }//GEN-LAST:event_jBtnPointActionPerformed
 
     private void jBtn0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtn0ActionPerformed
-        // TODO add your handling code here:
+        String EnterNumber = jtxtDisplay.getText();
+        if(EnterNumber == ""){
+            jtxtDisplay.setText(jBtn0.getText());
+        }else{
+            EnterNumber = jtxtDisplay.getText() + jBtn0.getText();
+            jtxtDisplay.setText(EnterNumber);
+        }
     }//GEN-LAST:event_jBtn0ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
