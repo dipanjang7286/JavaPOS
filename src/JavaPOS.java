@@ -74,24 +74,24 @@ public class JavaPOS extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton16 = new javax.swing.JButton();
-        jButton17 = new javax.swing.JButton();
-        jButton18 = new javax.swing.JButton();
-        jButton19 = new javax.swing.JButton();
+        jBtnVanillaMousse = new javax.swing.JButton();
+        jBtnCupCake = new javax.swing.JButton();
+        jBtnCreamCake = new javax.swing.JButton();
+        jBtnChocoMousse = new javax.swing.JButton();
+        jBtnChocoLavaCake = new javax.swing.JButton();
+        jBtnSmallPizza = new javax.swing.JButton();
+        jBtnOrangeJuice = new javax.swing.JButton();
         jBtnRainboCake = new javax.swing.JButton();
-        jButton21 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
+        jBtnRawCoffee = new javax.swing.JButton();
+        jBtnOatsSmoothie = new javax.swing.JButton();
+        jBtnEspresso = new javax.swing.JButton();
+        jBtnMeduimPizza = new javax.swing.JButton();
+        jBtnIceTea = new javax.swing.JButton();
+        jBtnBlackCoffee = new javax.swing.JButton();
         jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
-        jButton30 = new javax.swing.JButton();
+        jBtnCreamRoll = new javax.swing.JButton();
+        jBtnMuttonBurger = new javax.swing.JButton();
+        jBtnLargePizza = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jBtn9 = new javax.swing.JButton();
         jBtn7 = new javax.swing.JButton();
@@ -136,61 +136,68 @@ public class JavaPOS extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jButton4.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jBtnVanillaMousse.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnVanillaMousse.setText("Vanilla Mousse");
+        jBtnVanillaMousse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jBtnVanillaMousseActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 110, 100));
+        jPanel1.add(jBtnVanillaMousse, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 110, 100));
 
-        jButton5.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        jBtnCupCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnCupCake.setText("Cup Cake");
+        jBtnCupCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                jBtnCupCakeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 100));
+        jPanel1.add(jBtnCupCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 100));
 
-        jButton6.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jBtnCreamCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnCreamCake.setText("Cream Cake");
+        jBtnCreamCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jBtnCreamCakeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 110, 100));
+        jPanel1.add(jBtnCreamCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 110, 100));
 
-        jButton16.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton16.addActionListener(new java.awt.event.ActionListener() {
+        jBtnChocoMousse.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnChocoMousse.setText("Choco Mousse");
+        jBtnChocoMousse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton16ActionPerformed(evt);
+                jBtnChocoMousseActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton16, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 110, 100));
+        jPanel1.add(jBtnChocoMousse, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 110, 100));
 
-        jButton17.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton17.addActionListener(new java.awt.event.ActionListener() {
+        jBtnChocoLavaCake.setFont(new java.awt.Font("Helvetica Neue", 1, 8)); // NOI18N
+        jBtnChocoLavaCake.setText("Choco Lava Cake");
+        jBtnChocoLavaCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton17ActionPerformed(evt);
+                jBtnChocoLavaCakeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton17, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 110, 100));
+        jPanel1.add(jBtnChocoLavaCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 110, 100));
 
-        jButton18.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton18.addActionListener(new java.awt.event.ActionListener() {
+        jBtnSmallPizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnSmallPizza.setText("Small Pizza");
+        jBtnSmallPizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton18ActionPerformed(evt);
+                jBtnSmallPizzaActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton18, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 110, 100));
+        jPanel1.add(jBtnSmallPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 110, 100));
 
-        jButton19.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton19.addActionListener(new java.awt.event.ActionListener() {
+        jBtnOrangeJuice.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnOrangeJuice.setText("Orange Juice");
+        jBtnOrangeJuice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton19ActionPerformed(evt);
+                jBtnOrangeJuiceActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton19, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 110, 100));
+        jPanel1.add(jBtnOrangeJuice, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 110, 100));
 
         jBtnRainboCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
         jBtnRainboCake.setText(" Rainbo Cake");
@@ -201,55 +208,62 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnRainboCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 110, 100));
 
-        jButton21.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        jBtnRawCoffee.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnRawCoffee.setText("Raw Coffee");
+        jBtnRawCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                jBtnRawCoffeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton21, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 110, 100));
+        jPanel1.add(jBtnRawCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 110, 100));
 
-        jButton22.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        jBtnOatsSmoothie.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnOatsSmoothie.setText("Oats smoothie");
+        jBtnOatsSmoothie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                jBtnOatsSmoothieActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton22, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 100));
+        jPanel1.add(jBtnOatsSmoothie, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 100));
 
-        jButton23.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        jBtnEspresso.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnEspresso.setText("Espresso");
+        jBtnEspresso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                jBtnEspressoActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 110, 100));
+        jPanel1.add(jBtnEspresso, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 110, 100));
 
-        jButton24.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        jBtnMeduimPizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnMeduimPizza.setText("Medium Pizza");
+        jBtnMeduimPizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                jBtnMeduimPizzaActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton24, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 110, 100));
+        jPanel1.add(jBtnMeduimPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 110, 100));
 
-        jButton25.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        jBtnIceTea.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnIceTea.setText("Ice Tea");
+        jBtnIceTea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                jBtnIceTeaActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton25, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 110, 100));
+        jPanel1.add(jBtnIceTea, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 110, 100));
 
-        jButton26.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        jBtnBlackCoffee.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnBlackCoffee.setText("Black Coffee");
+        jBtnBlackCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                jBtnBlackCoffeeActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton26, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 110, 100));
+        jPanel1.add(jBtnBlackCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 110, 100));
 
-        jButton27.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
+        jButton27.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jButton27.setText("Chicken Wings");
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton27ActionPerformed(evt);
@@ -257,29 +271,32 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 110, 100));
 
-        jButton28.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        jBtnCreamRoll.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jBtnCreamRoll.setText("Cream Roll");
+        jBtnCreamRoll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                jBtnCreamRollActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton28, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 110, 100));
+        jPanel1.add(jBtnCreamRoll, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 110, 100));
 
-        jButton29.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton29.addActionListener(new java.awt.event.ActionListener() {
+        jBtnMuttonBurger.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnMuttonBurger.setText("Mutton Burger");
+        jBtnMuttonBurger.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton29ActionPerformed(evt);
+                jBtnMuttonBurgerActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton29, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 110, 100));
+        jPanel1.add(jBtnMuttonBurger, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 110, 100));
 
-        jButton30.setFont(new java.awt.Font("Helvetica Neue", 1, 36)); // NOI18N
-        jButton30.addActionListener(new java.awt.event.ActionListener() {
+        jBtnLargePizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnLargePizza.setText("Large Pizza");
+        jBtnLargePizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton30ActionPerformed(evt);
+                jBtnLargePizzaActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton30, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 230, 110, 100));
+        jPanel1.add(jBtnLargePizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 230, 110, 100));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 20, 730, 410));
 
@@ -632,33 +649,61 @@ public class JavaPOS extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jBtn0ActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    private void jBtnVanillaMousseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnVanillaMousseActionPerformed
+        double priceOfTheItem = 34.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Vanilla Mousse","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnVanillaMousseActionPerformed
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void jBtnCupCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCupCakeActionPerformed
+        double priceOfTheItem = 4.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Cup Cake","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnCupCakeActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void jBtnCreamCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreamCakeActionPerformed
+        double priceOfTheItem = 5.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Cream Cake","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnCreamCakeActionPerformed
 
-    private void jButton16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton16ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton16ActionPerformed
+    private void jBtnChocoMousseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChocoMousseActionPerformed
+        double priceOfTheItem = 35.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Choco Mousse","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnChocoMousseActionPerformed
 
-    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton17ActionPerformed
+    private void jBtnChocoLavaCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChocoLavaCakeActionPerformed
+        double priceOfTheItem = 15.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Choco Lava Cake","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnChocoLavaCakeActionPerformed
 
-    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton18ActionPerformed
+    private void jBtnSmallPizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSmallPizzaActionPerformed
+        double priceOfTheItem = 155.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Small Pizza","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnSmallPizzaActionPerformed
 
-    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton19ActionPerformed
+    private void jBtnOrangeJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOrangeJuiceActionPerformed
+        double priceOfTheItem = 19.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Orange Juice","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnOrangeJuiceActionPerformed
 
     private void jBtnRainboCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRainboCakeActionPerformed
         double priceOfTheItem = 3.40;
@@ -668,45 +713,81 @@ public class JavaPOS extends javax.swing.JFrame {
         itemCost();
     }//GEN-LAST:event_jBtnRainboCakeActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    private void jBtnRawCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRawCoffeeActionPerformed
+        double priceOfTheItem = 5.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Raw Coffee","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnRawCoffeeActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    private void jBtnOatsSmoothieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOatsSmoothieActionPerformed
+        double priceOfTheItem = 15.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Oats Smoothie","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnOatsSmoothieActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    private void jBtnEspressoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEspressoActionPerformed
+        double priceOfTheItem = 15.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Espresso","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnEspressoActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+    private void jBtnMeduimPizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMeduimPizzaActionPerformed
+        double priceOfTheItem = 199.50;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Medium Pizza","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnMeduimPizzaActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
+    private void jBtnIceTeaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIceTeaActionPerformed
+        double priceOfTheItem = 19.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Ice Tea","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnIceTeaActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    private void jBtnBlackCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnBlackCoffeeActionPerformed
+        double priceOfTheItem = 25.99;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Orange Juice","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnBlackCoffeeActionPerformed
 
     private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton27ActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton28ActionPerformed
+    private void jBtnCreamRollActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreamRollActionPerformed
+        double priceOfTheItem = 3.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Cream Roll","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnCreamRollActionPerformed
 
-    private void jButton29ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton29ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton29ActionPerformed
+    private void jBtnMuttonBurgerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMuttonBurgerActionPerformed
+        double priceOfTheItem = 155.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Mutton Burger","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnMuttonBurgerActionPerformed
 
-    private void jButton30ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton30ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton30ActionPerformed
+    private void jBtnLargePizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLargePizzaActionPerformed
+        double priceOfTheItem = 255.40;
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{"Large Pizza","1",priceOfTheItem});
+        itemCost();
+    }//GEN-LAST:event_jBtnLargePizzaActionPerformed
 
     private void jtxtBarcodeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtBarcodeActionPerformed
         // TODO add your handling code here:
@@ -778,26 +859,26 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jBtn7;
     private javax.swing.JButton jBtn8;
     private javax.swing.JButton jBtn9;
+    private javax.swing.JButton jBtnBlackCoffee;
     private javax.swing.JButton jBtnC;
+    private javax.swing.JButton jBtnChocoLavaCake;
+    private javax.swing.JButton jBtnChocoMousse;
+    private javax.swing.JButton jBtnCreamCake;
+    private javax.swing.JButton jBtnCreamRoll;
+    private javax.swing.JButton jBtnCupCake;
+    private javax.swing.JButton jBtnEspresso;
+    private javax.swing.JButton jBtnIceTea;
+    private javax.swing.JButton jBtnLargePizza;
+    private javax.swing.JButton jBtnMeduimPizza;
+    private javax.swing.JButton jBtnMuttonBurger;
+    private javax.swing.JButton jBtnOatsSmoothie;
+    private javax.swing.JButton jBtnOrangeJuice;
     private javax.swing.JButton jBtnPoint;
     private javax.swing.JButton jBtnRainboCake;
-    private javax.swing.JButton jButton16;
-    private javax.swing.JButton jButton17;
-    private javax.swing.JButton jButton18;
-    private javax.swing.JButton jButton19;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
+    private javax.swing.JButton jBtnRawCoffee;
+    private javax.swing.JButton jBtnSmallPizza;
+    private javax.swing.JButton jBtnVanillaMousse;
     private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
