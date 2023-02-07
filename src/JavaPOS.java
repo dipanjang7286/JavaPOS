@@ -1,5 +1,13 @@
 
+import java.awt.print.PrinterException;
 import javax.swing.table.DefaultTableModel;
+
+import java.text.MessageFormat;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTable;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -114,7 +122,7 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         jtxtDisplay = new javax.swing.JTextField();
         jtxtChange = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jComboPayment = new javax.swing.JComboBox<>();
         jPanel6 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -452,9 +460,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel5.add(jtxtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 160, 40));
 
-        jComboBox1.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Mater Card" }));
-        jPanel5.add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 160, 40));
+        jComboPayment.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
+        jComboPayment.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Mater Card" }));
+        jPanel5.add(jComboPayment, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 10, 160, 40));
 
         jPanel4.add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 10, 460, 160));
 
@@ -483,6 +491,11 @@ public class JavaPOS extends javax.swing.JFrame {
 
         jbtnReset.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jbtnReset.setText("Reset");
+        jbtnReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jbtnResetActionPerformed(evt);
+            }
+        });
         jPanel3.add(jbtnReset, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 10, 200, 40));
 
         jbtnRemove.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
@@ -798,20 +811,64 @@ public class JavaPOS extends javax.swing.JFrame {
     }//GEN-LAST:event_jtxtChangeActionPerformed
 
     private void jbtnRemoveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnRemoveActionPerformed
-        // TODO add your handling code here:
+        
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        
+        int removeItem = jTable1.getSelectedRow();
+        
+        if(removeItem >= 0){
+            model.removeRow(removeItem);
+        }
+        itemCost();
+        
+        if(jComboPayment.getSelectedItem().equals("Cash")){
+            change();
+        }else{
+            jtxtChange.setText("");
+            jtxtDisplay.setText("");
+        }
     }//GEN-LAST:event_jbtnRemoveActionPerformed
 
     private void jbtnPayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPayActionPerformed
-        // TODO add your handling code here:
+        if(jComboPayment.getSelectedItem().equals("Cash")){
+            change();
+        }else{
+            jtxtChange.setText("");
+            jtxtDisplay.setText("");
+        }
     }//GEN-LAST:event_jbtnPayActionPerformed
-
+    private JFrame frame;
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
-        // TODO add your handling code here:
+        frame = new JFrame("Exit");
+        
+        if (JOptionPane.showConfirmDialog(frame,"Confirm if you want to exit", "POS", JOptionPane.YES_NO_OPTION)==JOptionPane.YES_NO_OPTION){
+            System.exit(0);
+        }
     }//GEN-LAST:event_jbtnExitActionPerformed
 
     private void jbtnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnPrintActionPerformed
-        // TODO add your handling code here:
+        
+        MessageFormat header = new MessageFormat("Printing in progress");
+        
+        MessageFormat footer = new MessageFormat("Page {0, number, integer}");
+        
+            try {
+                jTable1.print(JTable.PrintMode.NORMAL,header,footer);
+            } catch (PrinterException ex) {
+                System.err.format("No Printer Found", ex.getMessage());
+            }
     }//GEN-LAST:event_jbtnPrintActionPerformed
+
+    private void jbtnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnResetActionPerformed
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.setRowCount(0);
+        jtxtChange.setText("");
+        jtxtTax.setText("");
+        jtxtTotal.setText("");
+        jtxtSubTotal.setText("");
+        jtxtDisplay.setText("");
+        jtxtBarcode.setText("");
+    }//GEN-LAST:event_jbtnResetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -879,7 +936,7 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jBtnSmallPizza;
     private javax.swing.JButton jBtnVanillaMousse;
     private javax.swing.JButton jButton27;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboPayment;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
