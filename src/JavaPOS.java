@@ -169,7 +169,7 @@ public class JavaPOS extends javax.swing.JFrame {
         jBtnMeduimPizza = new javax.swing.JButton();
         jBtnIceTea = new javax.swing.JButton();
         jBtnBlackCoffee = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
+        jBtnChickenWings = new javax.swing.JButton();
         jBtnCreamRoll = new javax.swing.JButton();
         jBtnMuttonBurger = new javax.swing.JButton();
         jBtnLargePizza = new javax.swing.JButton();
@@ -343,14 +343,14 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnBlackCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 110, 100));
 
-        jButton27.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
-        jButton27.setText("Chicken Wings");
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        jBtnChickenWings.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnChickenWings.setText("Chicken Wings");
+        jBtnChickenWings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                jBtnChickenWingsActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton27, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 110, 100));
+        jPanel1.add(jBtnChickenWings, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 110, 100));
 
         jBtnCreamRoll.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
         jBtnCreamRoll.setText("Cream Roll");
@@ -741,10 +741,11 @@ public class JavaPOS extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtn0ActionPerformed
 
     private void jBtnVanillaMousseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnVanillaMousseActionPerformed
-        double priceOfTheItem = 34.99;
-        
+        ArrayList data = getData(2);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Vanilla Mousse","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnVanillaMousseActionPerformed
 
@@ -759,126 +760,146 @@ public class JavaPOS extends javax.swing.JFrame {
     }//GEN-LAST:event_jBtnCupCakeActionPerformed
 
     private void jBtnCreamCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreamCakeActionPerformed
-        double priceOfTheItem = 5.99;
-        
+        ArrayList data = getData(3);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Cream Cake","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnCreamCakeActionPerformed
 
     private void jBtnChocoMousseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChocoMousseActionPerformed
-        double priceOfTheItem = 35.99;
-        
+        ArrayList data = getData(4);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Choco Mousse","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnChocoMousseActionPerformed
 
     private void jBtnChocoLavaCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChocoLavaCakeActionPerformed
-        double priceOfTheItem = 15.99;
-        
+        ArrayList data = getData(5);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Choco Lava Cake","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnChocoLavaCakeActionPerformed
 
     private void jBtnSmallPizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnSmallPizzaActionPerformed
-        double priceOfTheItem = 155.99;
-        
+        ArrayList data = getData(6);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Small Pizza","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnSmallPizzaActionPerformed
 
     private void jBtnOrangeJuiceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOrangeJuiceActionPerformed
-        double priceOfTheItem = 19.99;
-        
+        ArrayList data = getData(7);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Orange Juice","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnOrangeJuiceActionPerformed
 
     private void jBtnRainboCakeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRainboCakeActionPerformed
-        double priceOfTheItem = 3.40;
-        
+        ArrayList data = getData(8);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Rainbow Cake","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnRainboCakeActionPerformed
 
     private void jBtnRawCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnRawCoffeeActionPerformed
-        double priceOfTheItem = 5.40;
-        
+        ArrayList data = getData(9);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Raw Coffee","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnRawCoffeeActionPerformed
 
     private void jBtnOatsSmoothieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnOatsSmoothieActionPerformed
-        double priceOfTheItem = 15.40;
-        
+        ArrayList data = getData(10);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Oats Smoothie","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnOatsSmoothieActionPerformed
 
     private void jBtnEspressoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnEspressoActionPerformed
-        double priceOfTheItem = 15.40;
-        
+        ArrayList data = getData(18);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Espresso","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnEspressoActionPerformed
 
     private void jBtnMeduimPizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMeduimPizzaActionPerformed
-        double priceOfTheItem = 199.50;
-        
+        ArrayList data = getData(11);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Medium Pizza","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnMeduimPizzaActionPerformed
 
     private void jBtnIceTeaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnIceTeaActionPerformed
-        double priceOfTheItem = 19.99;
-        
+        ArrayList data = getData(12);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Ice Tea","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnIceTeaActionPerformed
 
     private void jBtnBlackCoffeeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnBlackCoffeeActionPerformed
-        double priceOfTheItem = 25.99;
-        
+        ArrayList data = getData(13);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Orange Juice","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnBlackCoffeeActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
+    private void jBtnChickenWingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnChickenWingsActionPerformed
+        ArrayList data = getData(17);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
+        DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+        model.addRow(new Object[]{item_name,"1",price});
+        itemCost();
+    }//GEN-LAST:event_jBtnChickenWingsActionPerformed
 
     private void jBtnCreamRollActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnCreamRollActionPerformed
-        double priceOfTheItem = 3.40;
-        
+        ArrayList data = getData(14);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Cream Roll","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnCreamRollActionPerformed
 
     private void jBtnMuttonBurgerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnMuttonBurgerActionPerformed
-        double priceOfTheItem = 155.40;
-        
+        ArrayList data = getData(15);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Mutton Burger","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnMuttonBurgerActionPerformed
 
     private void jBtnLargePizzaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBtnLargePizzaActionPerformed
-        double priceOfTheItem = 255.40;
-        
+        ArrayList data = getData(16);
+        String item_name = (String) data.get(0);
+        String price = (String) data.get(1);
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
-        model.addRow(new Object[]{"Large Pizza","1",priceOfTheItem});
+        model.addRow(new Object[]{item_name,"1",price});
         itemCost();
     }//GEN-LAST:event_jBtnLargePizzaActionPerformed
 
@@ -1011,6 +1032,7 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jBtn9;
     private javax.swing.JButton jBtnBlackCoffee;
     private javax.swing.JButton jBtnC;
+    private javax.swing.JButton jBtnChickenWings;
     private javax.swing.JButton jBtnChocoLavaCake;
     private javax.swing.JButton jBtnChocoMousse;
     private javax.swing.JButton jBtnCreamCake;
@@ -1028,7 +1050,6 @@ public class JavaPOS extends javax.swing.JFrame {
     private javax.swing.JButton jBtnRawCoffee;
     private javax.swing.JButton jBtnSmallPizza;
     private javax.swing.JButton jBtnVanillaMousse;
-    private javax.swing.JButton jButton27;
     private javax.swing.JComboBox<String> jComboPayment;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
