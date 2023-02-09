@@ -11,6 +11,7 @@ import javax.swing.JTable;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Vector;
 
 
 /*
@@ -23,6 +24,8 @@ import java.util.ArrayList;
  * @author dipanjanghosh
  */
 public class JavaPOS extends javax.swing.JFrame {
+
+    private int NULL;
 
     /**
      * Creates new form JavaPOS
@@ -937,6 +940,66 @@ public class JavaPOS extends javax.swing.JFrame {
             jtxtChange.setText("");
             jtxtDisplay.setText("");
         }
+        
+        String change = jtxtChange.getText();
+        String display = jtxtDisplay.getText();
+        String payment_type = (String) jComboPayment.getSelectedItem();
+        
+        String total = jtxtTotal.getText();
+        
+        try {
+            
+        Class.forName("com.mysql.cj.jdbc.Driver");
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            System.out.println("Driver Loaded");
+        try {
+            con = DriverManager.getConnection("jdbc:mysql://localhost/javaPos","root","himalayan");
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            System.out.println("Connection Established");
+
+            String sql = "Insert Into orders (id,total_price, payment_type, cash_given, balance_returned) Values(?,?,?,?,?)";
+            
+            
+        try {
+            pstm=con.prepareStatement(sql);
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            pstm.setInt(1,NULL);
+            pstm.setString(2, total);            
+            pstm.setString(3, payment_type);
+            pstm.setString(4, display);
+            pstm.setString(5, change);
+
+
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        try {
+            pstm.executeUpdate();
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+   
+        try {
+            pstm.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        try {
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+     
     }//GEN-LAST:event_jbtnPayActionPerformed
     private JFrame frame;
     private void jbtnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbtnExitActionPerformed
