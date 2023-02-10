@@ -983,6 +983,37 @@ public class JavaPOS extends javax.swing.JFrame {
 
         try {
             pstm.executeUpdate();
+            // getting id from orders table
+            Integer id = null;
+            String sql2 = "SELECT MAX(id) as id FROM `orders`";
+            pstm=con.prepareStatement(sql2);
+            res=pstm.executeQuery();
+            while (res.next()==true) {
+			
+                id = res.getInt(1);
+                
+            }
+            Integer order_id = id;
+            // add data on order_items table
+            String item,quantity,amount;
+            DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
+            for(int i =0; i< model.getRowCount(); i++){
+                item=(String) model.getValueAt(i, 0);
+                quantity = (String) model.getValueAt(i, 1);
+                amount = (String) model.getValueAt(i, 2);
+                
+                String sql1 = "Insert Into orders_items (id,order_id, item, quantity, amount) Values(?,?,?,?,?)";
+                pstm = con.prepareStatement(sql1);
+                
+                pstm.setInt(1,NULL);
+                pstm.setInt(2, order_id);            
+                pstm.setString(3, item);
+                pstm.setString(4, quantity);
+                pstm.setString(5, amount);
+                
+                pstm.executeUpdate();
+            }
+            
         } catch (SQLException ex) {
             Logger.getLogger(JavaPOS.class.getName()).log(Level.SEVERE, null, ex);
         }
