@@ -229,6 +229,7 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnVanillaMousse, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 110, 100));
 
+        jBtnCupCake.setBackground(new java.awt.Color(242, 242, 242));
         jBtnCupCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
         jBtnCupCake.setText("Cup Cake");
         jBtnCupCake.addActionListener(new java.awt.event.ActionListener() {
@@ -265,7 +266,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnChocoLavaCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 10, 110, 100));
 
+        jBtnSmallPizza.setBackground(new java.awt.Color(51, 51, 51));
         jBtnSmallPizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnSmallPizza.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/istockphoto-639963606-1024x1024.jpg"))); // NOI18N
         jBtnSmallPizza.setText("Small Pizza");
         jBtnSmallPizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -319,7 +322,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnEspresso, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 120, 110, 100));
 
+        jBtnMeduimPizza.setBackground(new java.awt.Color(0, 0, 0));
         jBtnMeduimPizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnMeduimPizza.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/pizza-isolate-medium-size-top-view-stock-photo-of-pizza-2AE8F4H.jpg"))); // NOI18N
         jBtnMeduimPizza.setText("Medium Pizza");
         jBtnMeduimPizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -373,7 +378,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnMuttonBurger, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 230, 110, 100));
 
+        jBtnLargePizza.setBackground(new java.awt.Color(0, 0, 0));
         jBtnLargePizza.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnLargePizza.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/big-pizza-with-a-barbecue-on-a-wooden-table-PGCEYY.jpg"))); // NOI18N
         jBtnLargePizza.setText("Large Pizza");
         jBtnLargePizza.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -527,6 +534,12 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel6.setText("Change");
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 160, 40));
+
+        jtxtDisplay.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jtxtDisplayActionPerformed(evt);
+            }
+        });
         jPanel5.add(jtxtDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 160, 40));
 
         jtxtChange.addActionListener(new java.awt.event.ActionListener() {
@@ -1077,6 +1090,10 @@ public class JavaPOS extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jbtnPayKeyPressed
+
+    private void jtxtDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jtxtDisplayActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtxtDisplayActionPerformed
 
     /**
      * @param args the command line arguments
