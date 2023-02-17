@@ -112,8 +112,14 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnChocoLavaCake">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="8" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Image/Screenshot 2023-02-17 at 10.16.23 AM.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Choco Lava Cake"/>
           </Properties>
@@ -214,8 +220,14 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnEspresso">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="12" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Image/Screenshot 2023-02-17 at 10.14.14 AM.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Espresso"/>
           </Properties>
@@ -316,8 +328,14 @@
         </Component>
         <Component class="javax.swing.JButton" name="jBtnMuttonBurger">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="0" green="0" red="0" type="rgb"/>
+            </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Helvetica Neue" size="10" style="1"/>
+            </Property>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/Image/Screenshot 2023-02-17 at 10.10.42 AM.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Mutton Burger"/>
           </Properties>

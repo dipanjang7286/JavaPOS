@@ -257,7 +257,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnChocoMousse, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 10, 110, 100));
 
+        jBtnChocoLavaCake.setBackground(new java.awt.Color(0, 0, 0));
         jBtnChocoLavaCake.setFont(new java.awt.Font("Helvetica Neue", 1, 8)); // NOI18N
+        jBtnChocoLavaCake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-17 at 10.16.23 AM.png"))); // NOI18N
         jBtnChocoLavaCake.setText("Choco Lava Cake");
         jBtnChocoLavaCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,7 +315,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnOatsSmoothie, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 120, 110, 100));
 
+        jBtnEspresso.setBackground(new java.awt.Color(0, 0, 0));
         jBtnEspresso.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnEspresso.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-17 at 10.14.14 AM.png"))); // NOI18N
         jBtnEspresso.setText("Espresso");
         jBtnEspresso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -369,7 +373,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnCreamRoll, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 230, 110, 100));
 
+        jBtnMuttonBurger.setBackground(new java.awt.Color(0, 0, 0));
         jBtnMuttonBurger.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnMuttonBurger.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-17 at 10.10.42 AM.png"))); // NOI18N
         jBtnMuttonBurger.setText("Mutton Burger");
         jBtnMuttonBurger.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
