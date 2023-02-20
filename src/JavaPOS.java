@@ -220,7 +220,9 @@ public class JavaPOS extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.LOWERED));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jBtnVanillaMousse.setBackground(new java.awt.Color(0, 0, 0));
         jBtnVanillaMousse.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnVanillaMousse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.14.43 PM.png"))); // NOI18N
         jBtnVanillaMousse.setText("Vanilla Mousse");
         jBtnVanillaMousse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -229,8 +231,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnVanillaMousse, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 10, 110, 100));
 
-        jBtnCupCake.setBackground(new java.awt.Color(242, 242, 242));
+        jBtnCupCake.setBackground(new java.awt.Color(0, 0, 0));
         jBtnCupCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnCupCake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.44.14 PM.png"))); // NOI18N
         jBtnCupCake.setText("Cup Cake");
         jBtnCupCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,7 +242,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnCupCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 110, 100));
 
+        jBtnCreamCake.setBackground(new java.awt.Color(0, 0, 0));
         jBtnCreamCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnCreamCake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.36.04 PM.png"))); // NOI18N
         jBtnCreamCake.setText("Cream Cake");
         jBtnCreamCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,7 +253,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnCreamCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, 110, 100));
 
+        jBtnChocoMousse.setBackground(new java.awt.Color(0, 0, 0));
         jBtnChocoMousse.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnChocoMousse.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/BFV16661_ShrimpAlfredoDinnerForTwoFINAL.jpg"))); // NOI18N
         jBtnChocoMousse.setText("Choco Mousse");
         jBtnChocoMousse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -279,7 +286,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnSmallPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 10, 110, 100));
 
+        jBtnOrangeJuice.setBackground(new java.awt.Color(0, 0, 0));
         jBtnOrangeJuice.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnOrangeJuice.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.46.07 PM.png"))); // NOI18N
         jBtnOrangeJuice.setText("Orange Juice");
         jBtnOrangeJuice.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -288,7 +297,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnOrangeJuice, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 120, 110, 100));
 
+        jBtnRainboCake.setBackground(new java.awt.Color(0, 0, 0));
         jBtnRainboCake.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnRainboCake.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.38.29 PM.png"))); // NOI18N
         jBtnRainboCake.setText(" Rainbo Cake");
         jBtnRainboCake.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -297,7 +308,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnRainboCake, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 120, 110, 100));
 
+        jBtnRawCoffee.setBackground(new java.awt.Color(0, 0, 0));
         jBtnRawCoffee.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnRawCoffee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.25.58 PM.png"))); // NOI18N
         jBtnRawCoffee.setText("Raw Coffee");
         jBtnRawCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -306,7 +319,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnRawCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 110, 100));
 
+        jBtnOatsSmoothie.setBackground(new java.awt.Color(0, 0, 0));
         jBtnOatsSmoothie.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnOatsSmoothie.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 11.56.39 AM.png"))); // NOI18N
         jBtnOatsSmoothie.setText("Oats smoothie");
         jBtnOatsSmoothie.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -337,7 +352,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnMeduimPizza, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 110, 100));
 
+        jBtnIceTea.setBackground(new java.awt.Color(0, 0, 0));
         jBtnIceTea.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnIceTea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.47.49 PM.png"))); // NOI18N
         jBtnIceTea.setText("Ice Tea");
         jBtnIceTea.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -346,7 +363,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnIceTea, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 230, 110, 100));
 
+        jBtnBlackCoffee.setBackground(new java.awt.Color(0, 0, 0));
         jBtnBlackCoffee.setFont(new java.awt.Font("Helvetica Neue", 1, 12)); // NOI18N
+        jBtnBlackCoffee.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.40.19 PM.png"))); // NOI18N
         jBtnBlackCoffee.setText("Black Coffee");
         jBtnBlackCoffee.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -355,7 +374,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnBlackCoffee, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 230, 110, 100));
 
+        jBtnChickenWings.setBackground(new java.awt.Color(0, 0, 0));
         jBtnChickenWings.setFont(new java.awt.Font("Helvetica Neue", 1, 10)); // NOI18N
+        jBtnChickenWings.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.27.57 PM.png"))); // NOI18N
         jBtnChickenWings.setText("Chicken Wings");
         jBtnChickenWings.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -364,7 +385,9 @@ public class JavaPOS extends javax.swing.JFrame {
         });
         jPanel1.add(jBtnChickenWings, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 230, 110, 100));
 
+        jBtnCreamRoll.setBackground(new java.awt.Color(0, 0, 0));
         jBtnCreamRoll.setFont(new java.awt.Font("Helvetica Neue", 1, 14)); // NOI18N
+        jBtnCreamRoll.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Image/Screenshot 2023-02-20 at 12.11.32 PM.png"))); // NOI18N
         jBtnCreamRoll.setText("Cream Roll");
         jBtnCreamRoll.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -541,19 +564,21 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel6.setText("Change");
         jPanel5.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 160, 40));
 
+        jtxtDisplay.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jtxtDisplay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtDisplayActionPerformed(evt);
             }
         });
-        jPanel5.add(jtxtDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 60, 160, 40));
+        jPanel5.add(jtxtDisplay, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, 240, 40));
 
+        jtxtChange.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jtxtChange.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxtChangeActionPerformed(evt);
             }
         });
-        jPanel5.add(jtxtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, 160, 40));
+        jPanel5.add(jtxtChange, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 110, 240, 40));
 
         jComboPayment.setFont(new java.awt.Font("Helvetica Neue", 1, 24)); // NOI18N
         jComboPayment.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Cash", "Visa Card", "Mater Card" }));
@@ -575,8 +600,14 @@ public class JavaPOS extends javax.swing.JFrame {
         jLabel3.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jLabel3.setText("Tax");
         jPanel6.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, 160, 40));
+
+        jtxtTotal.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jPanel6.add(jtxtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 110, 240, 40));
+
+        jtxtSubTotal.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jPanel6.add(jtxtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 13, 240, 40));
+
+        jtxtTax.setFont(new java.awt.Font("Helvetica Neue", 0, 36)); // NOI18N
         jPanel6.add(jtxtTax, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 60, 240, 40));
 
         jPanel4.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 450, 160));
